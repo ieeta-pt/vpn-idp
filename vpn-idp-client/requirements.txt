@@ -1,0 +1,5 @@
+websockets
+flask-sock
+flask
+requests
+python-dotenv

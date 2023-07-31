@@ -1,0 +1,37 @@
+{% block content %}
+
+{# Load the tag library #}
+{% load bootstrap4 %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+
+{# Display django.contrib.messages as Bootstrap alerts #}
+{% bootstrap_messages %}
+
+<!--Login-->
+
+<body>
+  <div class="container py-5">
+    <h1>Login</h1>
+    <div style="margin-bottom: 10px" class="text-center">
+      <a title="Login with CMD (Chave Móvel Digital)" style="cursor: pointer" href="/accounts/login/auth_gov/"
+        class="text-center btn btn-primary mt-3 btn-rounded waves-effect w-md waves-light">
+        <img width="200px"
+          src="https://raw.githubusercontent.com/amagovpt/doc-AUTENTICACAO/main/logotipos/logo-autenticacao.gov-branco.png"
+          alt="">
+      </a>
+      <a title="Login with Google" style="cursor: pointer" href="/accounts/login/google/"
+        class="text-center btn btn-primary mt-3 btn-rounded waves-effect w-md waves-light">
+        <img width="200px"
+          src="https://www.drupal.org/files/issues/2020-01-19/google_logo.png"
+          alt="">
+      </a>
+    </div>
+  </div>
+
+  {% include 'footer.html' %}
+
+</body>
+{% endblock %}

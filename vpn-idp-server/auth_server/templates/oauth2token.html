@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="javascript:submitForm();">
+<form method="POST" id="oauth2_form">
+    {% csrf_token %}
+    {{ oauth2_form }}
+</form>
+<script type="application/javascript">
+    function submitForm() {
+        const hash = window.location.hash;
+        const arHash = hash.split('=');
+        const oauth2_token = arHash[1].split('&')[0];
+        document.getElementById('id_oauth2_token').value = oauth2_token;
+		document.getElementById("oauth2_form").submit();
+	}
+</script> 
+</body>
+</html>
