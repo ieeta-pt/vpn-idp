@@ -6,5 +6,8 @@ This repository includes a VPN solution based on WireGuard that implements user 
 
 A PDF containing the dissertation presentation is present in both modules.
 
+This work was also presented at The Nineteenth International Conference on Networking and Services (ICNS 2023).
+The article PDF is available [here](https://www.thinkmind.org/articles/icns_2023_1_30_10016.pdf).
+
 ### Author
 [Duarte Mortágua](mailto:duarte.ntm@ua.pt)
